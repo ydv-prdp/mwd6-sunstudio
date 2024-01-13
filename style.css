@@ -14,6 +14,10 @@ a{
     text-decoration: none;
     color: black;
 }
+#main{
+    position: relative;
+    z-index: 10;
+}
 #page1{
     width: 100%;
     min-height: 100vh;
@@ -323,4 +327,75 @@ nav{
     top:25%;
     display: none;
 }
+#fixed-image img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+#page4{
+    height: 70vh;
+    width: 100%;
+    background-color: #efeae3;
+    padding-bottom: 4vw;
+    position: relative;
+}
+
+
+
+#page5{
+    height: 100vh;
+    width: 100%;
+}
+
+#footer{
+    position: fixed;
+    z-index: 9;
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#footer-div{
+    background-color: red;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw;
+}
+#footer h1{
+    font-size: 23vw;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    font-size: 18px;
+    border-left: 1px solid #aeadad;
+    width: 30% !important;
+    padding: 0 2vw;
+    
+  }
+  .swiper-slide-container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }
+  .swiper-slide-container img{
+    width: 50%;
+  }
+
+
+
+
 

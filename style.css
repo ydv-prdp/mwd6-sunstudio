@@ -183,6 +183,7 @@ nav{
     width: 100%;
     background-color: #efeae3;
     padding: 8vw 0;
+    position: relative;
 }
 .con{
     white-space: nowrap;
@@ -220,3 +221,106 @@ nav{
         transform: translateX(-100%);
     }   
 }
+
+#page2bottom{
+    height: 80vh;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vw;
+    position: relative;
+    z-index: 9;
+}
+#page2bottom #heading h1{
+    font-size: 3.5vw;
+    line-height: 4vw;
+}
+#heading{
+    width: 55%;
+}
+#page2bottomright{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+#page2bottomright img{
+    width: 100%;
+    border-radius: 15px;
+}
+#page2bottomright p{
+    font-weight: 200;
+    margin-top: 2vw;
+}
+
+#gooey{
+    height: 32vw;
+    width: 32vw;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to top right, #fe320a, #ff671b);
+    top:58%;
+    left: 25%;
+    filter: blur(20px);
+    animation: gooey 5s infinite alternate ease-in-out;
+}
+
+@keyframes gooey {
+    from{
+        transform: translate(10%,-10%) skew(0deg);
+    }
+    to{
+        transform: translate(-10%, 10%) skew(-12deg);
+    }
+}
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #efeae3;
+    padding: 4vw 0;
+}
+
+.elem{
+    height: 150px;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #38383864;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+    overflow: hidden;
+}
+
+.elem h2{
+    font-size: 3vw;
+    position: relative;
+    z-index: 9;
+}
+
+.elem .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+    position: absolute;
+    left:0;
+    top:-100%;
+    transition: all ease 0.3s;
+}
+
+.elem:hover .overlay{
+    top:0;
+}
+
+#fixed-image{
+    height: 30vw;
+    width: 23vw;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    top:25%;
+    display: none;
+}
+
